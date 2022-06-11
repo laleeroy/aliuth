@@ -18,6 +18,7 @@ $(call inherit-product, device/xiaomi/alioth/device.mk)
 RICE_MAINTAINER := LaLeeroy
 TARGET_SUPPORTS_QUICK_TAP := true
 TARGET_FACE_UNLOCK_SUPPORTED := true
+TARGET_BUILD_GRAPHENEOS_CAMERA := false
 
 PRODUCT_NAME := lineage_alioth
 PRODUCT_DEVICE := alioth
