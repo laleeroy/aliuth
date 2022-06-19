@@ -14,6 +14,14 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 # Inherit from alioth device
 $(call inherit-product, device/xiaomi/alioth/device.mk)
 
+# Rom Flags
+RICE_MAINTAINER := LaLeeroy
+RICE_DEVICE := alioth
+TARGET_SUPPORTS_QUICK_TAP := true
+TARGET_FACE_UNLOCK_SUPPORTED := true
+TARGET_BUILD_GRAPHENEOS_CAMERA := false
+TARGET_ENABLE_BLUR := true
+
 PRODUCT_NAME := lineage_alioth
 PRODUCT_DEVICE := alioth
 PRODUCT_MANUFACTURER := Xiaomi
