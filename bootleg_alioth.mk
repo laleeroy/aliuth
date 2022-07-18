@@ -9,20 +9,15 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Inherit some common lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/bootleggers/config/common_full_phone.mk)
 
 # Inherit from alioth device
 $(call inherit-product, device/xiaomi/alioth/device.mk)
 
-# Rom Flags
-RICE_MAINTAINER := LaLeeroy
-RICE_DEVICE := alioth
-TARGET_SUPPORTS_QUICK_TAP := true
+# ROM Flags
 TARGET_FACE_UNLOCK_SUPPORTED := true
-TARGET_BUILD_GRAPHENEOS_CAMERA := false
-TARGET_ENABLE_BLUR := true
 
-PRODUCT_NAME := lineage_alioth
+PRODUCT_NAME := bootleg_alioth
 PRODUCT_DEVICE := alioth
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_BRAND := POCO
