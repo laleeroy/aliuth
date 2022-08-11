@@ -13,4 +13,10 @@
 <resources>
     <!-- Whether usage of the proximity sensor during doze is supported -->
     <bool name="doze_proximity_sensor_supported">false</bool>
+
+    <!-- System info -->
+    <string name="config_sysCPUTemp">"/sys/class/thermal/thermal_zone0/temp"</string>           
+    <string name="config_sysBatteryTemp">"/sys/class/power_supply/battery/temp"</string>                      
+    <string name="config_sysGPUFreq">"/sys/kernel/gpu/gpu_clock"</string>                                     
+    <string name="config_sysGPULoad">"/sys/kernel/gpu/gpu_busy"</string>
 </resources>
